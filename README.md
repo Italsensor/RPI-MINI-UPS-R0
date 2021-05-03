@@ -4,6 +4,8 @@
 
 RPI-MINI-UPS, is a small Raspberry Pi board (made of 4 layers pcb) that work as UPS and is also able to manage the Raspberry Pi power-on and power-off like a classical desktop system by means of an external normally-open push-button, other than is also incorporated a dedicated RTC module accessibile through the Raspberry I2C bus and also a RS232 driver connected to the serial pins of the Raspberry GPIO for direct usage by the user.
 
+**Board registers**
+
 The board can be queried from the I2C bus to know many operative parameters (presence or not of the main power supply, backup battery voltage, state of charging of the backup battery, ecc...) and expose to the user also an EEPROM memory area (16 registers) that can be used directly by the user to store in a permanent way any desired data.
 
 Here a table of the available registers:
@@ -32,9 +34,13 @@ R/W: readable and writeable register
 
 A writing operation to an only readable register have no effect, also writing on a register address that is not addressed on the table above have no effect, reading on a register that is not into the table above may report arbitrary value.
 
+**BOARD Raspberry Pi dedicated GPIO resource**
+
 In order to signal to the Raspberry module whwn the main power supply is lost (blackout bvent) and then when is time to start the controlled shutdown, the RPI-MINI-UPS board use the GPIO17 pin of the GPIO Raspberry board connector, this is the only pin that is used by the board itself, all the other pins on the GPIO are transparent from the board perspective.
 
-The board support two functioning modes:
+**Operating modes**
+
+The board can operate in two functioning modes:
 
 - auto mode;
 - manual mode;

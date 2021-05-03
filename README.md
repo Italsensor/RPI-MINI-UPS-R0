@@ -4,4 +4,4 @@ Examples files for the RPI-MINI-UPS board, a small Raspberry Pi board that act a
 
 **File description**
 
-Into the Esempi folder you can find some Python examples how to manage the I2C communication with the UPS board.
+Into the *Examples* folder you can find some Python examples how to manage the I2C communication with the UPS board.

@@ -26,6 +26,12 @@ Here a table of the available registers:
 | 0x54             | VINSTATE    | R      | Status of the input voltage (present / absent)       |
 | 0x55             | BTCHGSTAT   | R      | Current charging stage for the LiPo battery          |
 
+R: readable register
+W: writeable register
+R/W: readable and writeable register
+
+writing to only readable register have no effect, also writing on register address that is not addressed on the table above have no effect, reading on a register that is not into the table above may report arbitrary value.
+
 In order to signal to the Raspberry module whwn the main power supply is lost (blackout bvent) and then when is time to start the controlled shutdown, the RPI-MINI-UPS board use the GPIO17 pin of the GPIO Raspberry board connector, this is the only pin that is used by the board itself, all the other pins on the GPIO are transparent from the board perspective.
 
 The board support two functioning modes:

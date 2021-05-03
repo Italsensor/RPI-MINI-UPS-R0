@@ -62,7 +62,7 @@ Examples files for the RPI-MINI-UPS board can be found inside the *Examples* fol
 *ex-i2c.py*  
 python script to show how communicate through the I2C bus with the MINI-UPS-BOARD (with using the smbus module).
 
-*ex-subprocess-i2c.py*
+*ex-subprocess-i2c.py*  
 python script to show how communicate through the I2C bus with subprocess module (without using the smbus module).
 
 **Board picture**

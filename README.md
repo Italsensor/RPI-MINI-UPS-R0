@@ -13,6 +13,8 @@ Here a table of the available registers:
 | 0x00 - 0x0F      | EEPROM AREA | R/W    | EEPROM user area |
 | 0x10             | POWER ON HI | R      | Power on counter hi-byte |
 | 0x11             | POWER ON LO | R      | Power on counter lo-byte |
+| 0x2E             | FW_REV      | R      | Firmware revision |
+| 0x2D             | FW_VER      | R      | Firmware version  |
 
 In order to signal to the Raspberry module whwn the main power supply is lost (blackout bvent) and then when is time to start the controlled shutdown, the RPI-MINI-UPS board use the GPIO17 pin of the GPIO Raspberry board connector, this is the only pin that is used by the board itself, all the other pins on the GPIO are transparent from the board perspective.
 

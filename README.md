@@ -36,7 +36,7 @@ A writing operation to an only readable register have no effect, also writing on
 
 **Raspberry Pi RPI-MINI-UPS board dedicated GPIO resource**
 
-In order to signal to the Raspberry module whwn the main power supply is lost (blackout bvent) and then when is time to start the controlled shutdown, the RPI-MINI-UPS board use the GPIO17 pin of the GPIO Raspberry board connector, this is the only pin that is used by the board itself, all the other pins on the GPIO are transparent from the board perspective.
+In order to signal to the Raspberry module whwn the main power supply is lost (blackout bvent) and then when is time to start the controlled shutdown, the RPI-MINI-UPS board use the physical pin 11 (GPIO17) pin of the GPIO Raspberry board connector, this is the only pin that is used by the board itself, all the other pins on the GPIO are transparent from the board perspective.
 
 **Operating modes**
 
@@ -60,7 +60,10 @@ The current charging status of the LiPo battery and the presence/absence of the 
 Examples files for the RPI-MINI-UPS board can be found inside the *Examples* folder.
 
 *ex-i2c.py*  
-python script to show how communicate through the I2C bus with the MINI-UPS-BOARD.
+python script to show how communicate through the I2C bus with the MINI-UPS-BOARD (with using the smbus module).
+
+*ex-subprocess-i2c.py*
+python script to show how communicate through the I2C bus with subprocess module (without using the smbus module).
 
 **Board picture**
 

@@ -47,11 +47,13 @@ The board can operate in two functioning modes:
 
 *Auto mode*
 
-The board act as a classical UPS, charging the battery if needed when the main power supply source is available and supply power when the main power supply is lost, before the backup battery is discharged a signal is sent to a dedicated pin of the GPIO in order to let the Raspberry perform a gracefully shutdown.
+The board act as a classical UPS, charging the battery if needed when the main power supply source is available and used the battery stored energy to supply the Raspberry Pi when the main power supply is lost. Before the backup battery is discharged a signal is sent to a dedicated pin of the GPIO in order to let the Raspberry perform a gracefully shutdown.
 
 *Manual mode*
 
-In this mode, by adding an external push-button (normally open) between a dedicated pin on the board and the 0V, the RPI-MINI-UPS can act to manage the power-on and power-off from the user action and before the backup battery is discharged a signal is sent to a dedicated pin of the GPIO in order to let the Raspberry perform a gracefully shutdown.
+In this mode, by adding an external push-button (normally open) between a dedicated pin on the board and the 0V, the RPI-MINI-UPS can act to manage the power-on and power-off from the user action. Before the backup battery is discharged a signal is sent to a dedicated pin of the GPIO in order to let the Raspberry perform a gracefully shutdown.
+
+The current charging status of the LiPo battery and the presence/absence of the main supply or when a fault event occur is also signaled through some dedicated leds that are on the board.
 
 **Examples**
 

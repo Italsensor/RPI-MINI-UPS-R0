@@ -5,10 +5,10 @@ Examples files for the RPI-MINI-UPS board, a small Raspberry Pi board that act a
 Some images of the board.
 
 ![Image](/Images/miniups_r0-1.jpg)
-Top layer view (perpective)
+Figure 1: Top layer view (perpective)
 
 ![Image](/Images/miniups_r0-3.jpg)
-Bottom layer view
+Figure 2: Bottom layer view
 
 **File description**
 

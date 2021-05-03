@@ -1,0 +1,8 @@
+[Unit]
+Description=Shutdown manager
+
+[Service]
+ExecStart=/usr/bin/python2 /home/pi/rpimups_shsrv.py
+
+[Install]
+WantedBy=multi-user.target

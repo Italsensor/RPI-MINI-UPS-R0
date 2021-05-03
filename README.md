@@ -35,4 +35,4 @@ Figure 1: Top layer view (perpective)
 
 ![Image](/Images/miniups_r0-3.jpg)
 
-Figure 2: Bottom layer view (perspective) - the battery shown is about the RTC module.
+Figure 2: Bottom layer view (perspective) - the battery shown is about the RTC module. The backup battery connector is the white one.

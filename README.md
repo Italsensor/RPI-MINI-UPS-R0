@@ -6,6 +6,8 @@ RPI-MINI-UPS, is a small Raspberry Pi board (made of 4 layers pcb) that work as 
 
 The board can be queried from the I2C bus to know many operative parameters (presence or not of the main power supply, backup battery voltage, state of charging of the backup battery, ecc...) and expose to the user also an EEPROM memory area (16 registers) that can be used directly by the user to store in a permanent way any desired data.
 
+In order to signal to the Raspberry module whwn the main power supply is lost (blackout bvent) and then when is time to start the controlled shutdown, the RPI-MINI-UPS board use the GPIO17 pin of the GPIO Raspberry board connector, this is the only pin that is used by the board itself, all the other pins on the GPIO are transparent from the board perspective.
+
 The board support two functioning modes:
 
 - auto mode;

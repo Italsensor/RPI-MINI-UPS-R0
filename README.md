@@ -26,11 +26,11 @@ Here a table of the available registers:
 | 0x54             | VINSTATE    | R      | Status of the input voltage (present / absent)       |
 | 0x55             | BTCHGSTAT   | R      | Current charging stage for the LiPo battery          |
 
-R: readable register
+R: readable register  
 
-W: writeable register
+W: writeable register  
 
-R/W: readable and writeable register
+R/W: readable and writeable register  
 
 writing to only readable register have no effect, also writing on register address that is not addressed on the table above have no effect, reading on a register that is not into the table above may report arbitrary value.
 

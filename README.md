@@ -57,7 +57,8 @@ In this mode, by adding an external push-button (normally open) between a pin an
 
 Examples files for the RPI-MINI-UPS board can be found inside the *Examples* folder.
 
-*ex-i2c.py* : python script to show how communicate through the I2C bus with the MINI-UPS-BOARD.
+*ex-i2c.py*  
+python script to show how communicate through the I2C bus with the MINI-UPS-BOARD.
 
 **Board picture**
 

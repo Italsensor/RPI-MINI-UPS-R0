@@ -1,7 +1,10 @@
 [Unit]
 Description=Shutdown manager
+StartLimitIntervalSec=0
 
 [Service]
+Restart=always
+RestartSec=1
 ExecStart=/usr/bin/python2 /home/pi/rpimups_shsrv.py
 
 [Install]

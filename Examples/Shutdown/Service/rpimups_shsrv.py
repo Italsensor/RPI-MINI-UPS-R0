@@ -2,41 +2,6 @@
 
 # ----------------------------------------------------
 # Servizio gestione shutdown da linea RPIOFF
-# impostare permessi file:
-# chmod 777 rpimups_shsrv.py
-# ----------------------------------------------------
-# Installare il servizio copiando il file
-# "rpimups_shsrv.service" del servizio in:
-#   /etc/systemd/system
-# come utente root utilizzando il comando:
-# sudo cp rpimups_shsrv.service /etc/systemd/system/rpimups_shsrv.service
-#
-# Avviare il servizio:
-#   sudo systemctl start rpimups_shsrv.service
-#
-# Fermare il servizio:
-#   sudo systemctl stop rpimups_shsrv.service
-#
-# Abilitare il servizio al boot:
-#   sudo systemctl enable rpimups_shsrv.service
-# root@raspberrypi:/home/pi# sudo systemctl enable rpimups_shsrv.service
-# Created symlink /etc/systemd/system/multi-user.target.wants/rpimups_shsrv.service /etc/systemd/system/rpimups_shsrv.service.
-#
-# Si hanno ancora comandi di restart e disable.
-#
-# Se si fanno modifiche:
-# sudo systemctl daemon-reload
-# sudo systemctl restart rpimups_shsrv.service
-#
-# Per vedere i servizi abilitati al boot
-#   systemctl list-unit-files | grep enabled
-#
-# Per vedere i servizi:
-#   systemctl --type=service
-#   systemctl list-units --type=service --state=active
-#
-# Per vedere se lo script e' stato lanciato:
-#   ps aux | grep -i rpimups_shsrv.py
 # ----------------------------------------------------
 
 import RPi.GPIO as GPIO

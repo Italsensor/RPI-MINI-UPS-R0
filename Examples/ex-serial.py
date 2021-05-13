@@ -1,10 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 # --------------------------------------------------
 # Prerequisiti:
 #
 # sudo apt-get install python-serial
-# sudo apt-get install python3-serial
-# sudo apt-get install python3-serial-asyncio
 # --------------------------------------------------
 
 import sys
@@ -38,9 +36,9 @@ class rcvSerialThread(threading.Thread):
 				self.rxByte = self.serialPortObj.read(1)
 				if (self.rxByte == "$"):
 					self.buffer = "$"
-				elif ( (self.rxByte <> "!") and (self.rxByte <> "%") ):
+				elif (self.rxByte <> "%"):
 					self.buffer = self.buffer + self.rxByte
-				elif ( (self.rxByte == "!") or (self.rxByte == "%") ):
+				elif (self.rxByte == "%"):
 					self.buffer = self.buffer + self.rxByte
 					print("RX <= " + (self.buffer))
 					self.bFlagRx=True

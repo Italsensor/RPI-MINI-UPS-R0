@@ -39,9 +39,9 @@ class rcvSerialThread(threading.Thread):
 				self.rxByte = str(self.rxByteByte, 'utf-8')
 				if (self.rxByte == "$"):
 					self.buffer = "$"
-				elif ( (self.rxByte != "!") and (self.rxByte != "%") ):
+				elif (self.rxByte != "%"):
 					self.buffer = self.buffer + self.rxByte
-				elif ( (self.rxByte == "!") or (self.rxByte == "%") ):
+				elif (self.rxByte == "%"):
 					self.buffer = self.buffer + self.rxByte
 					print("RX <= " + (self.buffer))
 					self.bFlagRx=True

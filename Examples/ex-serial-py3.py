@@ -4,6 +4,8 @@
 #
 # sudo apt-get install python3-serial
 # sudo apt-get install python3-serial-asyncio
+#
+# F.F. - 13/05/2021
 # --------------------------------------------------
 
 import sys

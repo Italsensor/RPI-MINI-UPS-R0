@@ -11,6 +11,7 @@
 # - Installazione del package (globale)
 #
 # sudo pip3 install vcgencmd
+# Per info: https://pypi.org/project/vcgencmd/
 #
 # - Esecuzione script
 # python3 RPI-HW-Checker.py
@@ -56,7 +57,9 @@ if __name__ == "__main__":
 			print("Core voltage         : "+str(output))
 			sys.stdout.flush()
 			
-			#Misura allocazione memoria
+			# Misura allocazione memoria
+			# Attenzione misura ARM non accurata, vedere info
+			# su https://pypi.org/project/vcgencmd/
 			output = vcgm.get_mem("arm")
 			print("ARM memory allocation: "+str(output))
 			sys.stdout.flush()

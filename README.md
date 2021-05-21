@@ -65,6 +65,15 @@ python script to show how communicate through the I2C bus with the MINI-UPS-BOAR
 *ex-subprocess-i2c.py*  
 python script to show how communicate through the I2C bus with subprocess module (without using the smbus module).
 
+*ex-serial.py*
+python script for Python 2.x to test the serial communication.
+
+*ex-serial-py3.py*
+python script for Python 3.x to test the serial communication.
+
+*RPI-HW-Checker.py*
+python script for Python 3.x to check the hardware state of the RaspberryPi by means of the vcgencmd Python package.
+
 **Board picture**
 
 Into the *Images* folder there are some images of the board.

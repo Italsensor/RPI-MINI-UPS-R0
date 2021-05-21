@@ -6,6 +6,8 @@
 # Determinare numero bus I2C
 # ls -l /dev/i2c-1
 # crw-rw---- 1 root i2c 89, 1 Feb 14  2019 /dev/i2c-1
+#
+# F.F. - 30/04/2021
 # --------------------------------------------------
 
 import os

@@ -22,7 +22,6 @@ import sys
 import time
 
 from vcgencmd import Vcgencmd
-import json
 
 if __name__ == "__main__":
 

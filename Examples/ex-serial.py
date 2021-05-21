@@ -3,6 +3,8 @@
 # Prerequisiti:
 #
 # sudo apt-get install python-serial
+#
+# F.F. - 13/05/2021
 # --------------------------------------------------
 
 import sys

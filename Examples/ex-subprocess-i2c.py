@@ -1,8 +1,12 @@
 #!/usr/bin/python
 #
+# --------------------------------------------------
 # Utilizzo di subprocess per eseguire comandi
 # come se si fosse nella shell e recuperandone
 # l'output
+#
+# F.F. - 03/05/2021
+# --------------------------------------------------
 
 import os
 import sys
